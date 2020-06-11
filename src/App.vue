@@ -58,7 +58,7 @@
            <span>E</span>
          </div>
        </div>
-       <h2>TEST</h2>
+       <h2 @click="reload()">RELOAD</h2>
        <div class="whale">
          <div data-aos="fade-right"
          data-aos-delay="600"
@@ -170,6 +170,11 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    reload(){
+      location.reload()
     }
   }
 }

@@ -56,9 +56,9 @@
     h2{
       filter: opacity(0);
       position: absolute;
-      left: calc(50% - 100px);
+      left: calc(50% - 130px);
       transform: translateX(-50%);
-      font-size: 80px;
+      font-size: 60px;
       color: white;
       animation-name: display;
       animation-duration: 1000ms;
@@ -69,8 +69,8 @@
       cursor: pointer;
       &:hover{
         color: #3c3f7e;
-        font-size: 90px;
-        left: calc(50% - 110px);
+        font-size: 70px;
+        left: calc(50% - 150px);
       }
     }
   }
