@@ -1,0 +1,23 @@
+#content{
+  padding-top: 100px;
+  height: calc(100vh - 100px);
+  .content-text, .anim-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+      font-size: 50px;
+    }
+  }
+  .anim-text{
+    transition: .5s;
+    &:hover p{
+      cursor: pointer;
+      animation-name: ball;
+      animation-duration: 1500ms;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out;
+    }
+
+  }
+}

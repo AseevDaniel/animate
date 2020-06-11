@@ -1,0 +1,77 @@
+@import './header/menu.scss';
+@import './header/circle.scss';
+
+#header {
+  background-image: url(./assets/space.png);
+  height: calc(100vh - 60px);
+  padding: 0;
+  margin: 0;
+  padding-top: 60px;
+  .logo{
+    img{
+      width: 200px;
+      transition: .5s;
+      cursor: pointer;
+    }
+    img:hover{
+      width: 200px;
+      transform: translateY(-20px);
+    }
+  }
+  .title{
+    .space{
+      margin-top: 20px;
+      font-weight: 600;
+      animation-name: skw;
+      animation-duration: 400ms;
+      animation-delay: 1600ms;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+      div{
+        display: inline;
+        span{
+          display: inline;
+          font-size: 80px;
+        }
+      }
+    }
+    .whale{
+      font-weight: 600;
+      animation-name: skw;
+      animation-duration: 400ms;
+      animation-delay: 1600ms;
+      animation-timing-function: linear;
+      animation-fill-mode: forwards;
+      div{
+        display: inline;
+        span{
+          display: inline;
+          font-size: 90px;
+          &:hover{
+
+          }
+        }
+      }
+    }
+    h2{
+      filter: opacity(0);
+      position: absolute;
+      left: calc(50% - 100px);
+      transform: translateX(-50%);
+      font-size: 80px;
+      color: white;
+      animation-name: display;
+      animation-duration: 1000ms;
+      animation-delay: 2000ms;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+      transition: .5s;
+      cursor: pointer;
+      &:hover{
+        color: #3c3f7e;
+        font-size: 90px;
+        left: calc(50% - 110px);
+      }
+    }
+  }
+}
